@@ -1,0 +1,16 @@
+{% extends 'quizApp/base.html' %}
+{% block body %}
+                <h1 class="display-3">Управление Квизом</h1>
+                <h3>{{ event.quiz.name }}</h3>
+                {% if event %}<p>{{ event }}</p>
+                <table>{% for st in stage %}
+                    <tr>
+                        <td>{{ st.tour.subject }}</td>
+                        {% if st.time_stop %}<td><a class="btn btn-primary" href="#" role="button">Проверить результаты</a></td>
+                        {% elif st.time_start %}<td><a class="btn btn-danger" href="#" role="button">Остановить тур</a></td>
+                        {% else %}<td><a class="btn btn-success" href="#" role="button">Запустить тур</a></td>{% endif %}
+                    </tr>{% endfor %}
+                </table>
+                <br />
+                <a class="btn btn-info btn-lg" href="#" role="button">Таблица с результатами</a>{% else %}
+                <h2>Нет активных событий</h2>{% endif %}{% endblock %}

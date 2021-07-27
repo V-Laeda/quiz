@@ -1,0 +1,88 @@
+[
+  {
+    "model": "quizApp.cost",
+    "pk": 1,
+    "fields": {
+      "description": "1 балл"
+    }
+
+  },
+  {
+    "model": "quizApp.cost",
+    "pk": 2,
+    "fields": {
+      "description": "2 балла"}
+  },
+  {
+    "model": "quizApp.cost",
+    "pk": 3,
+    "fields": {
+      "description": "+1"}
+  },
+  {
+    "model": "quizApp.cost",
+    "pk": 4,
+    "fields": {
+      "description": "Собственный выбор"}
+  },
+  {
+    "model": "quizApp.eventstate",
+    "pk": 1,
+    "fields": {
+      "description": "Подготовлено"}
+  },
+  {
+    "model": "quizApp.eventstate",
+    "pk": 2,
+    "fields": {
+      "description": "Идёт"}
+  },
+  {
+    "model": "quizApp.eventstate",
+    "pk": 3,
+    "fields": {
+      "description": "Закончилось"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 1,
+    "fields": {
+      "description": "4 варианта"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 2,
+    "fields": {
+      "description": "3 варианта"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 3,
+    "fields": {
+      "description": "2 варианта"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 4,
+    "fields": {
+      "description": "5 вариантов"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 5,
+    "fields": {
+      "description": "6 вариантов"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 6,
+    "fields": {
+      "description": "Сопоставление"}
+  },
+  {
+    "model": "quizApp.answertype",
+    "pk": 7,
+    "fields": {
+      "description": "Текст"}
+  }
+]

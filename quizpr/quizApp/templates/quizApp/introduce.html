@@ -1,0 +1,23 @@
+{% extends 'quizApp/base.html' %}
+{% block body %}
+                <h1 class="display-3">{{ event.quiz }}</h1>
+                <h2 class="display-4">{{ event.location }}</h2>
+                <h3 class="display-5"><i>{{ event.date }}</i></h3>
+                <br />
+                <br />
+                <h4 class="display-5">Представьтесь, пожалуйста:</h4>
+                <div>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="event" value="{{ event.id }}">
+                        <input type="hidden" name="session_key" value="{{ session_key }}">
+                        {{ form.name }}
+                        <br />
+                        {{ form.slogan }}
+                        <br />
+                        <div>
+                            <button type="submit" class="btn btn-primary" >Поехали!</button>
+                        </div>
+                        <span>{{ error }}</span>
+                    </form>
+                </div>{% endblock %}
